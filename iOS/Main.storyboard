@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="94">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="6" selectedSegmentIndex="0">
+                                <rect key="frame" x="138" y="188" width="123" height="29"/>
+                                <segments>
+                                    <segment title="GL"/>
+                                    <segment title="Property"/>
+                                </segments>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="92" y="210" width="191" height="29"/>
+                                    <mask key="constraints">
+                                        <include reference="247"/>
+                                        <include reference="248"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="247" firstAttribute="width" constant="191"/>
+                                    <constraint id="248" firstAttribute="height" constant="29"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="247"/>
+                                        <exclude reference="248"/>
+                                    </mask>
+                                </variation>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="177" y="361" width="46" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="164" y="435" width="46" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="18"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="18" firstAttribute="width" constant="46"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="18"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue id="175" destination="22" kind="show"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="222" translatesAutoresizingMaskIntoConstraints="NO" image="logo.png" fixedFrame="YES">
+                                <rect key="frame" x="123" y="65" width="160" height="240"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="116" y="94" width="141" height="70"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="16" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="9" secondAttribute="trailing" constant="177"/>
+                            <constraint id="17" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="9" secondAttribute="bottom" constant="209"/>
+                            <constraint id="245" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="6" secondAttribute="trailing" constant="92"/>
+                            <constraint id="246" firstItem="6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="209"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6"/>
+                                <exclude reference="9"/>
+                                <exclude reference="222"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="16"/>
+                                <exclude reference="17"/>
+                                <exclude reference="245"/>
+                                <exclude reference="246"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="6"/>
+                                <include reference="9"/>
+                                <include reference="222"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="16"/>
+                                <include reference="17"/>
+                                <include reference="245"/>
+                                <include reference="246"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="LogoImage" destination="222" id="name-outlet-222"/>
+                    </connections>
+                    <navigationItem title="MUSIC Rater" id="144" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="986"/>
+        </scene>
+        <scene sceneID="21">
+            <objects>
+                <viewController id="22" sceneMemberID="viewController" customClass="LocationController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="19"/>
+                        <viewControllerLayoutGuide type="bottom" id="20"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="23">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="44" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="177" y="361" width="46" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="164.5" y="592" width="46" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="323"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="323" firstAttribute="width" constant="46"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="323"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue id="378" destination="342" kind="show"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location 1" lineBreakMode="tailTruncation" minimumFontSize="10" id="181" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
+                                <rect key="frame" x="61" y="133" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="11" y="127" width="353" height="20"/>
+                                    <mask key="constraints">
+                                        <include reference="316"/>
+                                        <include reference="317"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="316" firstAttribute="width" constant="353"/>
+                                    <constraint id="317" firstAttribute="height" constant="20"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="316"/>
+                                        <exclude reference="317"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address Line" borderStyle="roundedRect" minimumFontSize="17" id="192" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="43" y="197" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="24" y="197" width="328" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="212"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="212" firstAttribute="width" constant="328"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="212"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="City" borderStyle="roundedRect" minimumFontSize="17" id="193" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="43" y="197" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="24" y="241" width="328" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="215"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="215" firstAttribute="width" constant="328"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="215"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" id="195" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="24" y="301" width="320" height="162"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="24" y="279" width="328" height="162"/>
+                                    <mask key="constraints">
+                                        <include reference="286"/>
+                                        <include reference="287"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="286" firstAttribute="width" constant="328"/>
+                                    <constraint id="287" firstAttribute="height" constant="162"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="286"/>
+                                        <exclude reference="287"/>
+                                    </mask>
+                                </variation>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Zip" borderStyle="roundedRect" minimumFontSize="17" id="309" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="43" y="197" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="32" y="449" width="312" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="313"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="313" firstAttribute="width" constant="312"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="313"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="318" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="177" y="361" width="46" height="30"/>
+                                <state key="normal" title="Add Another Location...">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="82" y="537" width="212" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="329"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="329" firstAttribute="width" constant="212"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="329"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="44"/>
+                                <exclude reference="181"/>
+                                <exclude reference="192"/>
+                                <exclude reference="193"/>
+                                <exclude reference="195"/>
+                                <exclude reference="309"/>
+                                <exclude reference="318"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="210"/>
+                                <exclude reference="211"/>
+                                <exclude reference="213"/>
+                                <exclude reference="214"/>
+                                <exclude reference="284"/>
+                                <exclude reference="285"/>
+                                <exclude reference="311"/>
+                                <exclude reference="312"/>
+                                <exclude reference="314"/>
+                                <exclude reference="315"/>
+                                <exclude reference="325"/>
+                                <exclude reference="326"/>
+                                <exclude reference="327"/>
+                                <exclude reference="328"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="44"/>
+                                <include reference="181"/>
+                                <include reference="192"/>
+                                <include reference="193"/>
+                                <include reference="195"/>
+                                <include reference="309"/>
+                                <include reference="318"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="210"/>
+                                <include reference="211"/>
+                                <include reference="213"/>
+                                <include reference="214"/>
+                                <include reference="284"/>
+                                <include reference="285"/>
+                                <include reference="311"/>
+                                <include reference="312"/>
+                                <include reference="314"/>
+                                <include reference="315"/>
+                                <include reference="325"/>
+                                <include reference="326"/>
+                                <include reference="327"/>
+                                <include reference="328"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="210" firstItem="23" firstAttribute="trailing" secondItem="192" secondAttribute="trailing" constant="23"/>
+                            <constraint id="211" firstItem="192" firstAttribute="top" secondItem="23" secondAttribute="top" constant="197"/>
+                            <constraint id="213" firstItem="23" firstAttribute="trailing" secondItem="193" secondAttribute="trailing" constant="23"/>
+                            <constraint id="214" firstItem="193" firstAttribute="top" secondItem="23" secondAttribute="top" constant="241"/>
+                            <constraint id="284" firstItem="23" firstAttribute="bottom" secondItem="195" secondAttribute="bottom" constant="226"/>
+                            <constraint id="285" firstItem="195" firstAttribute="centerX" secondItem="193" secondAttribute="centerX"/>
+                            <constraint id="311" firstItem="23" firstAttribute="trailing" secondItem="309" secondAttribute="trailing" constant="31"/>
+                            <constraint id="312" firstItem="23" firstAttribute="bottom" secondItem="309" secondAttribute="bottom" constant="188"/>
+                            <constraint id="314" firstItem="23" firstAttribute="trailing" secondItem="181" secondAttribute="trailing" constant="11"/>
+                            <constraint id="315" firstItem="181" firstAttribute="top" secondItem="23" secondAttribute="top" constant="127"/>
+                            <constraint id="325" firstItem="44" firstAttribute="centerX" secondItem="23" secondAttribute="centerX"/>
+                            <constraint id="326" firstItem="23" firstAttribute="bottom" secondItem="44" secondAttribute="bottom" constant="45"/>
+                            <constraint id="327" firstItem="23" firstAttribute="trailing" secondItem="318" secondAttribute="trailing" constant="81"/>
+                            <constraint id="328" firstItem="23" firstAttribute="bottom" secondItem="318" secondAttribute="bottom" constant="100"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="StatePicker" destination="195" id="name-outlet-195"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="972"/>
+        </scene>
+        <scene sceneID="93">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="94" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="97">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="145" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73" y="1002"/>
+        </scene>
+        <scene sceneID="341">
+            <objects>
+                <viewController id="342" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="339"/>
+                        <viewControllerLayoutGuide type="bottom" id="340"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="343">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location 1" lineBreakMode="tailTruncation" minimumFontSize="10" id="380" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
+                                <rect key="frame" x="61" y="133" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="11" y="117" width="353" height="20"/>
+                                    <mask key="constraints">
+                                        <include reference="385"/>
+                                        <include reference="386"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="385" firstAttribute="width" constant="353"/>
+                                    <constraint id="386" firstAttribute="height" constant="20"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="385"/>
+                                        <exclude reference="386"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="380"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="383"/>
+                                <exclude reference="384"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="380"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="383"/>
+                                <include reference="384"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="383" firstItem="343" firstAttribute="trailing" secondItem="380" secondAttribute="trailing" constant="11"/>
+                            <constraint id="384" firstItem="380" firstAttribute="top" secondItem="343" secondAttribute="top" constant="117"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CoveragesController" destination="343" id="name-outlet-343"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="344" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1754" y="984"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+</document>
